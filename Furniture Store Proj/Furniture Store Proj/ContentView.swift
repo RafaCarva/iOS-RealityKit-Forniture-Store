@@ -9,8 +9,29 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    
+    @StateObject private var vm = FurnitureViewModel()
+    let furniture = ["sofa", "chair", "table", "armoire"]
+    
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        VStack {
+            ARViewContainer().edgesIgnoringSafeArea(.all)
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(furniture, id: \.self) { name in
+                        Image(name)
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .border(.green, width: vm.selectedFurniture == name ? 5.0: 0.0)
+                            .onTapGesture {
+                                vm.selectedFurniture = name
+                            }
+                        
+                    }
+                }
+            }
+        }
+        
     }
 }
 

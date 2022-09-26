@@ -12,6 +12,7 @@
 		8961759C28E1F6AD00B24F97 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8961759B28E1F6AD00B24F97 /* Experience.rcproject */; };
 		8961759E28E1F6AE00B24F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8961759D28E1F6AE00B24F97 /* Assets.xcassets */; };
 		896175A128E1F6AE00B24F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896175A028E1F6AE00B24F97 /* Preview Assets.xcassets */; };
+		896175A828E20EF500B24F97 /* FurnitureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896175A728E20EF500B24F97 /* FurnitureViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8961759B28E1F6AD00B24F97 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		8961759D28E1F6AE00B24F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896175A028E1F6AE00B24F97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		896175A728E20EF500B24F97 /* FurnitureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				8961759B28E1F6AD00B24F97 /* Experience.rcproject */,
 				8961759D28E1F6AE00B24F97 /* Assets.xcassets */,
 				8961759F28E1F6AE00B24F97 /* Preview Content */,
+				896175A728E20EF500B24F97 /* FurnitureViewModel.swift */,
 			);
 			path = "Furniture Store Proj";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				8961759A28E1F6AD00B24F97 /* ContentView.swift in Sources */,
 				8961759828E1F6AD00B24F97 /* AppDelegate.swift in Sources */,
 				8961759C28E1F6AD00B24F97 /* Experience.rcproject in Sources */,
+				896175A828E20EF500B24F97 /* FurnitureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +285,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +317,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
