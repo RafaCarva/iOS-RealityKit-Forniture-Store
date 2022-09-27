@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8922845B28E272240031A098 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922845A28E272240031A098 /* Coordinator.swift */; };
+		8922845D28E279070031A098 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922845C28E279070031A098 /* ARView+Extensions.swift */; };
 		8961759828E1F6AD00B24F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961759728E1F6AD00B24F97 /* AppDelegate.swift */; };
 		8961759A28E1F6AD00B24F97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961759928E1F6AD00B24F97 /* ContentView.swift */; };
 		8961759C28E1F6AD00B24F97 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8961759B28E1F6AD00B24F97 /* Experience.rcproject */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8922845A28E272240031A098 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8922845C28E279070031A098 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
 		8961759428E1F6AD00B24F97 /* Furniture Store Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Furniture Store Proj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8961759728E1F6AD00B24F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8961759928E1F6AD00B24F97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,12 +59,14 @@
 		8961759628E1F6AD00B24F97 /* Furniture Store Proj */ = {
 			isa = PBXGroup;
 			children = (
-				8961759728E1F6AD00B24F97 /* AppDelegate.swift */,
-				8961759928E1F6AD00B24F97 /* ContentView.swift */,
 				8961759B28E1F6AD00B24F97 /* Experience.rcproject */,
 				8961759D28E1F6AE00B24F97 /* Assets.xcassets */,
 				8961759F28E1F6AE00B24F97 /* Preview Content */,
+				8961759728E1F6AD00B24F97 /* AppDelegate.swift */,
+				8961759928E1F6AD00B24F97 /* ContentView.swift */,
 				896175A728E20EF500B24F97 /* FurnitureViewModel.swift */,
+				8922845A28E272240031A098 /* Coordinator.swift */,
+				8922845C28E279070031A098 /* ARView+Extensions.swift */,
 			);
 			path = "Furniture Store Proj";
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			files = (
 				8961759A28E1F6AD00B24F97 /* ContentView.swift in Sources */,
 				8961759828E1F6AD00B24F97 /* AppDelegate.swift in Sources */,
+				8922845B28E272240031A098 /* Coordinator.swift in Sources */,
+				8922845D28E279070031A098 /* ARView+Extensions.swift in Sources */,
 				8961759C28E1F6AD00B24F97 /* Experience.rcproject in Sources */,
 				896175A828E20EF500B24F97 /* FurnitureViewModel.swift in Sources */,
 			);

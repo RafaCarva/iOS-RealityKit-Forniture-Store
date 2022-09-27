@@ -7,51 +7,58 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ContentView : View {
     
     @StateObject private var vm = FurnitureViewModel()
-    let furniture = ["sofa", "chair", "table", "armoire"]
+    let furnitures = ["sofa", "chair", "table", "armoire"]
     
     var body: some View {
         VStack {
-            ARViewContainer().edgesIgnoringSafeArea(.all)
+            ARViewContainer(vm: vm).edgesIgnoringSafeArea(.all)
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(furniture, id: \.self) { name in
+                    ForEach(furnitures, id: \.self) { name in
                         Image(name)
                             .resizable()
                             .frame(width: 100, height: 100)
-                            .border(.green, width: vm.selectedFurniture == name ? 5.0: 0.0)
+                            .border(.white, width: vm.selectedFurniture == name ? 1.0: 0.0)
                             .onTapGesture {
                                 vm.selectedFurniture = name
                             }
-                        
                     }
                 }
             }
         }
-        
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
     
+    let vm: FurnitureViewModel
+    
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
         
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let session = arView.session
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = .horizontal
+        session.run(config)
         
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
+        arView.addGestureRecognizer(UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.tapped)))
+        context.coordinator.arView = arView
+        arView.addCoachingOverlay()
         return arView
         
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(vm: vm)
+    }
     
 }
 
